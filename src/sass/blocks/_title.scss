@@ -1,0 +1,38 @@
+.title {
+    color: var(--f-color);
+    line-height: 1;
+    &_fz30 {
+        font_weight: bold;
+        font-size: 30px;
+        color: var(--f-color);
+        text-align: center;
+    }
+    &_fz18 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 1;
+        color: var(--f-color);
+    }
+    &_fz16 {
+        font-weight: bold;
+        font-size: 16px;
+        color: var(--f-color);
+    }
+    &_fz14-pink {
+        font-weight: 500;
+        font-size: 14px;
+        color: var(--s-color);
+    }
+    &_fz12 {
+        font-weight: 500;
+        font-size: 12px;
+        color: var(--f-color);
+        &-pink {
+            font-weight: 500;
+            font-size: 12px;
+            color: var(--s-color);
+        }
+    }
+
+    
+}

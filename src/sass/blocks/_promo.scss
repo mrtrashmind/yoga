@@ -1,0 +1,53 @@
+.promo {
+    height: 908px;
+    width: 100%;
+    padding: 70px 140px;
+
+    background: url('../img/promo.png') no-repeat 50% 0/cover;
+    &__sup-title {
+        margin-top: 125px;
+        margin-left: 340px;
+
+        font-family: 'Caveat';
+        font-size: 45px;
+        line-height: 1;
+        color: var(--f-color);
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 265px;
+        line-height: 1;
+        letter-spacing: 0.34em;
+        color: #FFFFFF;
+        text-align: center;
+
+        text-shadow: 0px 4px 50px rgba(131, 115, 161, 0.6);
+    }
+    &__reg {
+       display: flex; 
+       align-items: center;
+       justify-content: center;
+
+       &-text {
+        margin-left: 13px;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--s-color);
+       }
+    }
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 128px;
+        &-address {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+
+            color: var(--f-color);
+        }
+    }
+}

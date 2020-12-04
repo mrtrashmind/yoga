@@ -1,0 +1,105 @@
+.prices {
+    position: relative;
+
+    padding-bottom: 146px;
+
+    background: url('../img/plans-cloud.png') 50% 43%/cover no-repeat;
+    p {
+        margin-bottom: 0;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 54px;
+    }
+    &__tabs {
+        display: flex;
+        justify-content: space-between;
+        
+        width: 286px;
+    }
+    &__tab {
+        position: relative;
+        cursor: pointer;
+        &_active {
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 6%;
+
+                width: 90%;
+                height: 1px;
+    
+                background: var(--s-color);
+            }
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+
+        margin-top: 49px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 263px;
+        height: 237px;
+
+        padding: 58px 0 54px 0;
+
+        border: none;
+
+        background: #FFFFFF;
+        box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+        button {
+            display: none;
+        }
+        &_active {
+            width: 331px;
+            height: 331px;
+
+            button {
+                display: block;
+
+                width: 223px;
+                height: 52px;
+
+                border: none;
+
+                background: var(--f-color);
+
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 1;
+
+                color: #ffffff;
+            }
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+    &__time {
+        margin-top: 19px;
+    }
+    &__cost {
+        margin-top: 26px;
+
+        font-weight: 700;
+    }
+    .number_position {
+        top: 41%;
+    }
+}

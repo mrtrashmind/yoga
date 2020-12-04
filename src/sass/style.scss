@@ -1,0 +1,81 @@
+:root {
+    --f-color: #8E80A9;
+    --s-color: #E65C7B;
+}
+
+@import 'libs/bootstrap-reboot.min';
+@import 'base/fonts.scss';
+
+* {
+    font-family: 'Geometria Medium', 'Geometria Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FCF8FE;
+}
+
+.container {
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+.number {
+    position: absolute;
+    right: 0;
+    top: 68%;
+
+    display: flex;
+    align-items: center;
+    div {
+        margin-right: 11px;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 30px;
+    
+        color: rgba(174, 164, 200, 0.5);
+    }
+    span {
+        display: block;
+
+        width: 56px;
+        height: 1px;
+
+        background-color: rgba(139, 126, 172, 0.73);
+    }
+}
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 56px;
+    height: 48px;
+
+    background: var(--s-color);
+
+    cursor: pointer;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+
+    svg path {
+        fill: var(--f-color);
+    }
+    &__promo {
+        width: 57px;
+    }
+}
+
+@import 'blocks/menu.scss';
+@import 'blocks/promo.scss';
+@import 'blocks/course.scss';
+@import 'blocks/prices.scss';
+@import 'blocks/team.scss';
+
+@import 'blocks/title.scss';

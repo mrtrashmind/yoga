@@ -70,12 +70,38 @@ body {
     &__promo {
         width: 57px;
     }
+    &__team {
+        justify-content: flex-end;
+        align-items: flex-start;
+        a {
+            margin-left: 11px;
+        }
+    }
+    &__comment {
+        justify-content: unset;
+        a {
+            margin-right: 11px;
+        }
+    }
+    &__contacts {
+        justify-content: unset;
+        margin-top: 34px;
+        svg path {
+            fill: #8B7EAC;
+        }
+        a {
+            margin-right: 11px;
+        }
+    }
 }
 
+@import 'blocks/title.scss';
 @import 'blocks/menu.scss';
 @import 'blocks/promo.scss';
 @import 'blocks/course.scss';
 @import 'blocks/prices.scss';
 @import 'blocks/team.scss';
+@import 'blocks/comment.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/footer.scss';
 
-@import 'blocks/title.scss';

@@ -1,0 +1,88 @@
+.contacts {
+    padding: 70px 0;
+
+    background: url('../img/footer.png') 50%/cover no-repeat;
+    &__title {
+        padding-left: 56%;
+        text-align: left;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 0.5fr 0.6fr;
+        column-gap: 180px;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+
+        padding-top: 21px;
+        p {
+            margin-bottom: 0;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+    &__phone {
+        display: flex;
+        flex-direction: column;
+    }
+    &__schedule {
+        margin-top: 31px;
+    }
+    &__email {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 31px;
+    }
+    &__form {
+        margin-top: 41px;
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            padding-left: 3px;
+
+            border: none;
+            border-bottom: 1px solid var(--f-color);            
+            
+            background: transparent;
+            opacity: 1; transition: opacity 0.3s ease;
+
+            outline:none;
+            &::placeholder {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+    
+                color: rgba(142, 128, 169, 0.4);
+            }
+            &:focus {
+                &::placeholder {
+                    opacity: 0; transition: opacity 0.3s ease;
+                }
+            }   
+        }
+    }
+    #tel {
+        margin-top: 43px;
+    }
+    &__button {
+        height: 56px;
+
+        margin-top: 57px;
+
+        border: none;
+
+        background: var(--s-color);
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+
+        color: #ffffff;
+    }
+}

@@ -60,14 +60,6 @@
         flex-direction: column;
         justify-content: space-between;
     }
-    &__social {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-        a {
-            margin-left: 11px;
-        }
-    }
     &__button {
         cursor: pointer;
         &:after {
@@ -92,7 +84,7 @@
         margin-top: 49px;
         padding-left: 267px;
     }
-    &__arrow {
+    .slider__arrow {
         display: flex;
         justify-content: center;
         align-items: center;
